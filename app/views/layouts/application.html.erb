@@ -86,7 +86,11 @@
       
      </nav>
     </header>
-    <%= yield %>
+    <main>
+      
+     <div><%= flash[:notice] %></div>
+     <%= yield %>
+    </main>
     <footer>
       <div class="conntainer mt-5">
         <div class="row">

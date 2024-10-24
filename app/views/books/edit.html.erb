@@ -1,4 +1,4 @@
-<p id>"notice"</p>
+<p id="notice"></p>
 <div class="container">
  <div class="row">
    <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
@@ -12,10 +12,13 @@
           <label for="book_body">Opinion</label>
            <%= f.text_area :body, id:"book_body", class:"form-control" %>
          </div>
-         <div class="form_group">
+         <div class="form-group">
           <%= f.submit "Update Book", class:"btn btn-success" %>
          </div>
        <% end %>
+       <%= link_to "Show", book_path(@book) %>
+       <%= "|" %>
+       <%= link_to "Back", books_path(@book) %>
    </div>
  </div>
 </div>
